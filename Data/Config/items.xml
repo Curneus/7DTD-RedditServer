@@ -1783,6 +1783,8 @@ d		<property name="Weight" value="64" />
 	<!-- Empty Jar -->
 	<item id="227" name="emptyJar" material="glass" stacknumber="15" mesh_file="Items/Food/mason_jar" hold_type="3">
         <property name="Weight" value="12" />
+		
+		<!-- FrontRunnerTek -->
 		<use_action
         	class="ExchangeItem"
 			delay="1.0"
@@ -1794,6 +1796,18 @@ d		<property name="Weight" value="64" />
 			focused_blockname_5 = "toilet01"
 			focused_blockname_6 = "toilet02"
 			focused_blockname_7 = "toilet03"
+			focused_blockname_8 = "cactus01"
+			focused_blockname_9 = "cactus02"
+			focused_blockname_10 = "cactus03"
+			focused_blockname_11 = "cactus04"
+			focused_blockname_12 = "cactus05"
+			focused_blockname_13 = "cactus06"
+			focused_blockname_14 = "fridgeTop"
+			focused_blockname_15 = "faucet02"
+			focused_blockname_16 = "faucet04"
+			focused_blockname_17 = "faucetBrass02"
+			focused_blockname_18 = "faucetBrass04"
+			focused_blockname_19 = "fridge"
             sound_start="UseActions/bucketfill_water"
 		/>		
         <preview zoom="28" pos="0,-0.05" rot="90,45,0" />
@@ -1942,6 +1956,20 @@ d		<property name="Weight" value="64" />
     </item>		
 	
 	<item id="239" name="bowl" material="organic" mesh_file="Items/Crafting/clay_bowl" hold_type="3">	
+       
+       <!-- FrontRunnerTek -->
+       <use_action
+        	class="ExchangeItem"
+			delay="30.0"
+			change_item_to      = "bloodBag"
+			focused_blockname_1 = "animalGore"
+			focused_blockname_2 = "gore"
+			focused_blockname_3 = "GoreBlock1BonesPrefab"
+			focused_blockname_4 = "GoreBlock1Prefab"			
+            sound_start="UseActions/bucketfill_water"
+		/>	
+
+       
         <preview zoom="30" pos="0,-0.03" rot="90,45,0" />
 		<property name="Group" value="Resources" />
     </item>	
@@ -2035,6 +2063,15 @@ d		<property name="Weight" value="64" />
     </item>
 
 	<item id="244" name="masonJar" stacknumber="15" material="metal" mesh_file="Items/Food/mason_jar" hold_type="3">
+        
+        <!-- FrontRunnerTek -->
+        <use_action
+        	class="ExchangeItem"
+			delay="90.0"
+			change_item_to      = "gasCan"
+			focused_blockname_1 = "gasPump"			
+            sound_start="UseActions/bucketfill_water"
+		/>	
         <preview zoom="28" pos="0,-0.05" rot="90,45,0" />
 		<property name="Group" value="Resources" />
     </item>	
@@ -2164,6 +2201,16 @@ d		<property name="Weight" value="64" />
 	
 	<item id="257" name="candyTin" material="metal" mesh_file="Items/Crafting/candy_tin" hold_type="3">
 		<property name="Weight" value="4" />
+        
+        <!-- FrontRunnerTek -->
+        <use_action
+        	class="ExchangeItem"
+			delay="30.0"
+			change_item_to      = "foodHoney"
+			focused_blockname_1 = "hive"			
+            sound_start="UseActions/bucketfill_water"
+		/>	
+        
         <preview zoom="28" pos="0,-0.05" rot="90,45,0" />
 		<property name="Group" value="Miscellaneous" />
     </item>	
