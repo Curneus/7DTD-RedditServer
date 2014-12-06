@@ -1503,7 +1503,7 @@
     <property name="DowngradeBlock" value="concreteReinforcedBroke01" />
   </block>
   <block id="391" name="tileIndustrialDecayedBrick">
-    <property name="Material" value="concrete" />
+    <property name="Material" value="brick" />
     <property name="Texture" value="299,299,319,299,299,299" />
   </block>
   <block id="392" name="plateBlockTileIndustrial">
@@ -6623,11 +6623,11 @@
     <drop event="Destroy" count="0" />
   </block>
   <block id="954" name="brickDecayed">
-    <property name="Material" value="concrete" />
+    <property name="Material" value="brick" />
     <property name="Texture" value="299,299,299,299,299,299" />
   </block>
   <block id="955" name="brickDecayedAsphalt">
-    <property name="Material" value="concrete" />
+    <property name="Material" value="brick" />
     <property name="Texture" value="10,10,299,299,299,299" />
   </block>
   <block id="956" name="tileIndustrial">
@@ -6635,7 +6635,7 @@
     <property name="Texture" value="319" />
   </block>
   <block id="957" name="brickDecayedTan">
-    <property name="Material" value="concrete" />
+    <property name="Material" value="brick" />
     <property name="Texture" value="328" />
   </block>
   <block id="958" name="concreteTrim2">
@@ -7189,7 +7189,7 @@
     <drop event="Destroy" name="destroyedStone" count="1" />
   </block>
   <block id="1041" name="brickDecayedSlope">
-    <property name="Material" value="concrete" />
+    <property name="Material" value="brick" />
     <property name="Shape" value="Wedged" />
     <property name="Texture" value="299,299,299,299,299,299" />
     <drop event="Destroy" name="destroyedStone" count="1" />
@@ -7201,7 +7201,7 @@
     <drop event="Destroy" name="destroyedStone" count="1" />
   </block>
   <block id="1043" name="brickDecayedTanSlope">
-    <property name="Material" value="concrete" />
+    <property name="Material" value="brick" />
     <property name="Shape" value="Wedged" />
     <property name="Texture" value="328" />
     <drop event="Destroy" name="destroyedStone" count="1" />
