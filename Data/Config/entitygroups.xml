@@ -163,7 +163,7 @@
 		<entity name="sc_General" />		
     </entitygroup>	
     
-    <entitygroup name="SupplyCrates_Day3">>
+    <entitygroup name="SupplyCrates_Day3">
 		<entity name="sc_General" />	
     </entitygroup>	
 	
