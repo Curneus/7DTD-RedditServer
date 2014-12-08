@@ -429,7 +429,7 @@
 	    <property name="PushFactor"   value="20" />
         <property name="ApproachSpeed"      value="0.2" />
         <property name="NightWanderSpeed"   value="0.08" />
-        <property name="NightApproachSpeed" value="0.75" />>
+        <property name="NightApproachSpeed" value="0.75" />
 	    <property name="CanClimbLadders"     value="true" />
 	    <property name="LootListOnDeath"  value="38" />
     </entity_class>	
