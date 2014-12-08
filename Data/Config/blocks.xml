@@ -3596,7 +3596,7 @@
     <property name="SmallDecorationRadius" value="1" />
     <property name="Model" value="Entities/Resources/rock_resourcePrefab" />
     <drop event="Destroy" name="rockSmall" count="3,10" prob="1" />
-    <drop event="Destroy" name="ironFragment" count="1,8" prob="1" />" />
+    <drop event="Destroy" name="ironFragment" count="1,8" prob="1" />
     <property name="DowngradeBlock" value="rockResourceBroke1" />
   </block>
   <block id="631" name="secureDoorWooden">
