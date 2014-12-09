@@ -1501,6 +1501,7 @@
     <property name="Material" value="concrete_reinforced" />
     <property name="Texture" value="315" />
     <property name="DowngradeBlock" value="concreteReinforcedBroke01" />
+    <drop event="Destroy" count="0" />
   </block>
   <block id="391" name="tileIndustrialDecayedBrick">
     <property name="Material" value="brick" />
