@@ -51,7 +51,7 @@
         particle_category="stone"
         hardness="2.5"
         stepsound="grass"
-        fertile_level="1"
+        fertile_level="2"
 		stability_glue="2"
     />
 	
@@ -71,7 +71,7 @@
         surface_category="earth"
         hardness="2.5" 
         stepsound="dirt"
-        fertile_level="1"
+        fertile_level="2"
 		stability_glue="20"
 		mass="10"
     />
@@ -81,7 +81,7 @@
         surface_category="earth"
         hardness="2.5"
         stepsound="leaves"
-        fertile_level="1"
+        fertile_level="2"
 		stability_glue="20"
 		mass="10"
      />
@@ -256,11 +256,11 @@
     <material id="concrete_reinforced_metal" 
         damage_category="stone"
         surface_category="stone"
-        hardness="14.0"
+        hardness="16.0"
         stepsound="stone"
 		stability_glue="110"
 		mass="15"
-		explosionresistance=".5"
+		explosionresistance=".75"
     />    		
 	
     <material id="bedrock" 
