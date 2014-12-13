@@ -452,7 +452,7 @@
 		<item name="pork"/>
 		<item name="corn"/>
 		<item name="potato"/>
-		<item name="blueberry"/>
+		<item name="blueberries"/>
     </lootgroup>
     
     <lootgroup name="cupboard">
@@ -503,7 +503,8 @@
         <item name="ballCap"/>
         <item name="miningHelmet"/>
         <item name="clothHat"/>
-        <item name="footballHelmet"/>  
+        <item name="footballHelmet"/> 
+        <item name="santaHat"/>          
 	</lootgroup>
 	
 	<lootgroup name="clothes">
@@ -513,6 +514,10 @@
         <item name="clothGloves"/>
 		<item name="cowboyHat"/>
         <item name="skullCap"/>
+        <item name="skullCapRed"/>
+        <item name="skullCapGreen"/>
+        <item name="skullCapBlue"/>
+        <item name="skullCapBrown"/>
         <item name="ballCap"/>
         <item name="miningHelmet"/> 
         <item name="denimPants"/> 
@@ -524,8 +529,17 @@
         <item name="tankTopBlue"/>
         <item name="wornBoots"/>
         <item name="bandana"/>
+        <item name="bandanaRed"/>
+        <item name="bandanaBlue"/>
+        <item name="bandanaGreen"/>
+        <item name="bandanaBrown"/>
+        <item name="bandanaBlack"/>
+        
+        
         <item name="shades"/>
         <item name="plaidShirt"/>
+        <item name="plaidShirtRed"/>
+        <item name="plaidShirtBrown"/>
         <item name="footballHelmet"/>
         <item name="blackDenimPants"/> 
         <item name="redDenimPants"/> 
@@ -583,8 +597,8 @@
 	</lootgroup>
 	
 	<lootgroup name="rareTools" count="1">
-		<item name="chainsaw" prob="0.1"/>
-		<item name="auger" prob="0.1"/>
+		<item name="chainsaw" />
+		<item name="auger" />
 		<item name="hammer"/>
 		<item name="sledgehammer"/>
 		<item name="nailgun"/>
@@ -599,19 +613,48 @@
 		<item name="wrench"/>
 		<item name="weaponRepairKit" count="1,4"/>
 		<item group="rareTools"/>
-	</lootgroup>	
+	</lootgroup>
 	
+	<lootgroup name="workingStiffs" count="1">
+		<item name="pickaxe"/>
+		<item name="shovel"/>
+		<item name="fireaxe"/>
+		<item name="hoe"/>
+		<item name="wrench"/>
+		<item name="weaponRepairKit" count="1,4"/>
+		<item name="woodFrame" count="10,50" />
+		<item name="rebarFrame" count="10,50" />
+		<item name="woodPlank" count="50,250" />
+		<item name="steelDoor1_v1" />
+		<item group="rareTools"/>
+
+	</lootgroup>			
+	
+		<lootgroup name="rareMedicine" count="1">	
+		<item name="firstAidKit" />
+		<item name="beaker" />
+		<item name="antibiotics" />
+		<item name="bloodDrawKit" />
+	</lootgroup>
+		
 	<lootgroup name="medicine" count="1">	
-		<item name="painkillers" prob="0.1"/>
-		<item name="firstAidBandage" prob="0.05"/>
-		<item name="bandage" prob="0.1"/>
-		<item name="beaker" prob="0.02" />
-		<item name="antibiotics" prob="0.04"/>
-		<item name="emptyJar" prob="0.1"/>
-		<item name="bloodBag" prob="0.07"/>
-		<item name="bloodDrawKit" prob="0.05"/>
+		<item name="painkillers" />
+		<item name="firstAidBandage" />
+		<item name="bandage" />
+		<item name="emptyJar" />
+		<item name="bloodBag" />
+		<item name="vitamins" />
+		<item name="grainAlcohol" />
+		<item name="splint" />
+		<item group="rareMedicine" />
 	</lootgroup>	
-	
+
+	<lootgroup name="beverages" count="1">	
+		<item name="emptyJar" />
+		<item name="bottledWater" />
+		<item name="beer" />
+
+	</lootgroup>		
 	
 	<lootgroup name="automotive+tools+junk" count="all">
         <item group="automotive" /> 
@@ -631,12 +674,6 @@
 		<item name="firstAidKit" count="2,5" />
 		<item name="antibiotics" count="1,3" />	
 	</lootgroup>		
-	    
-		<item name="cloth" count="2,5"/>
-    	<item name="painkillers" count="1,2"/>
-        <item name="firstAidBandage" count="1,2"/>
-        <item name="beaker" prob="0.7" />
-        <item name="antibiotics" prob="0.6" />
 
     <!-- lootcontainer 1 misc storage, cardboard boxes-->
     <lootcontainer id="1" count="0,2" size="4,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
@@ -1049,9 +1086,22 @@
     
     <!-- shotgun Messiah  -->
     <lootcontainer id="50" count="1,4" size="3,3" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
-	
 		<item group="guns+ammo" prob="3"/>
-		<item group="militaryguns+ammo" />
-		
-    </lootcontainer>              	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	      
+		<item group="militaryguns+ammo" />		
+    </lootcontainer> 
+    
+    <!-- pop n pills  -->
+    <lootcontainer id="51" count="0,3" size="3,3" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump">
+		<item group="medicine" />
+    </lootcontainer> 
+    
+    <!-- beer cooler  -->
+    <lootcontainer id="52" count="0,3" size="3,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler">
+		<item group="beverages" />
+    </lootcontainer> 
+    
+    <!-- working stiffs  -->
+    <lootcontainer id="53" count="1,4" size="3,3" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+		<item group="workingStiffs" />
+    </lootcontainer>                               	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                          	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                          	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                   	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	                	      	       	      	         	      	       	      	           	      	       	      	         	      	       	      	      
 </lootcontainers>
