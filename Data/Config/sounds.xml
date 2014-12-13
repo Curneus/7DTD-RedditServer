@@ -61,6 +61,7 @@ sounddebug tells you some limited information
     <assign filter="hornetroam" />
     <assign filter="spiderroam" />
     <assign filter="zombiedogroam" />
+    <assign filter="zombiesnowroam" />
   </master>
 
   <master name="zombiesense" volume="0.2" rate="7.0" maxvoices="4">
@@ -69,6 +70,7 @@ sounddebug tells you some limited information
     <assign filter="hornetsense" />
     <assign filter="hornetflylp1" />
     <assign filter="zombiedogsense" />
+    <assign filter="zombiesnowsense" />
   </master>
 
   <master name="zombiealert" volume="0.2" rate="7.0" maxvoices="4">
@@ -78,6 +80,7 @@ sounddebug tells you some limited information
     <assign filter="hornetalert" />
     <assign filter="spideralert" />
     <assign filter="zombiedogalert" />
+    <assign filter="zombiesnowalert" />
   </master>
 
   <master name="zombieattack" volume="0.2" rate="3.0" maxvoices="3">
@@ -87,6 +90,7 @@ sounddebug tells you some limited information
     <assign filter="hornetattack" />
     <assign filter="spiderattack" />
     <assign filter="zombiedogattack" />
+    <assign filter="zombiesnowattack" />
   </master>
 
   <master name="zombiepain" volume="0.2" rate="2.0" maxvoices="3">
@@ -96,6 +100,7 @@ sounddebug tells you some limited information
     <assign filter="hornetpain" />
     <assign filter="spiderpain" />
     <assign filter="zombiedogpain" />
+    <assign filter="zombiesnowpain" />
   </master>
 
   <master name="zombiedeath" volume="0.2" rate="2.0" maxvoices="3">
@@ -105,6 +110,7 @@ sounddebug tells you some limited information
     <assign filter="hornetdeath" />
     <assign filter="spiderdeath" />
     <assign filter="zombiedogdeath" />
+    <assign filter="zombiesnowdeath" />
   </master>
 
   <master name="horentfly" volume="0.2" rate="7.0" maxvoices="3">
