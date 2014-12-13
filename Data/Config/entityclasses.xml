@@ -8,7 +8,7 @@
 		<!-- This one decides for scoring -->
 		<property name="EntityType" 		value="Player" />
 		<property name="ModelType" 			value="UMA" />
-        <property name="Class"  			value="EntityPlayer" />
+    	<property name="Class"  			value="EntityPlayer" />
 		<property name="RagdollEnabled" 	value="false" />		
 		<property name="Prefab" 			value="Player" />
 		<property name="Mesh"   			value="Player/Male/player_maleRagdoll" />
@@ -176,11 +176,9 @@
 		
         <property name="SoundRandomTime" value="60.0" /> <!-- It will play the roam every 60/30 seconds -->    
         <property name="SoundRandom"     value="Enemies/Base_Zombie_Male/zombiemaleroam" />
-
         <property name="SoundAlertTime" value="25.0" /> <!-- It will play the roam every 25/12.5 seconds-->
         <property name="SoundAlert"     value="Enemies/Base_Zombie_Male/zombiemalealert" />
 	    <property name="SoundSense"  value="Enemies/Base_Zombie_Male/zombiemalesense" />
-		
         <property name="SoundHurt"    value="Enemies/Base_Zombie_Male/zombiemalepain" />
         <property name="SoundDeath"   value="Enemies/Base_Zombie_Male/zombiemaledeath" />
         <property name="SoundAttack"  value="Enemies/Base_Zombie_Male/zombiemaleattack" />
@@ -252,6 +250,13 @@
 	
     <entity_class name="snowzombie01" extends="zombie04">
         <property name="Mesh"   value="Zombies/snowzombie01Ragdoll" />
+        <property name="SoundRandom"     value="Enemies/Snow_Zombie/zombiesnowroam" />
+        <property name="SoundAlert"     value="Enemies/Snow_Zombie/zombiesnowalert" />
+        <property name="SoundAttack"     value="Enemies/Snow_Zombie/zombiesnowattack" />
+        <property name="SoundHurt"     value="Enemies/Snow_Zombie/zombiesnowpain" />
+        <property name="SoundDeath"   value="Enemies/Snow_Zombie/zombiesnowdeath" />
+        <property name="SoundSense"  value="Enemies/Snow_Zombie/zombiesnowsense" />
+		<property name="SoundFootstepModifier"  value="Enemies/Snow_Zombie/zombiesnowfootstep" />
         <property name="HandItem"             value="handCopZombie" />
 	    <property name="WalkType"  value="6" />
 	    <property name="MaxHealth"    value="300" />	
@@ -261,6 +266,13 @@
 	
     <entity_class name="snowzombie02" extends="zombie04">
         <property name="Mesh"   value="Zombies/snowzombie02Ragdoll" />
+        <property name="SoundRandom"     value="Enemies/Snow_Zombie/zombiesnowroam" />
+        <property name="SoundAlert"     value="Enemies/Snow_Zombie/zombiesnowalert" />
+        <property name="SoundAttack"     value="Enemies/Snow_Zombie/zombiesnowattack" />
+        <property name="SoundHurt"     value="Enemies/Snow_Zombie/zombiesnowpain" />
+        <property name="SoundDeath"   value="Enemies/Snow_Zombie/zombiesnowdeath" />
+        <property name="SoundSense"  value="Enemies/Snow_Zombie/zombiesnowsense" />
+		<property name="SoundFootstepModifier"  value="Enemies/Snow_Zombie/zombiesnowfootstep" />
         <property name="HandItem"             value="handCopZombie" />
 	    <property name="WalkType"  value="6" />
 	    <property name="MaxHealth"    value="300" />
@@ -270,12 +282,13 @@
     
     <entity_class name="snowzombie03" extends="zombie04">
         <property name="Mesh"   value="Zombies/snowzombie03Ragdoll" />
-        <property name="SoundRandom"     value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
-        <property name="SoundAlert"     value="Enemies/Base_Zombie_Female/zombiefemalealert" />
-        <property name="SoundAttack"     value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
-        <property name="SoundHurt"     value="Enemies/Base_Zombie_Female/zombiefemalepain" />
-        <property name="SoundDeath"   value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
-        <property name="SoundSense"  value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+        <property name="SoundRandom"     value="Enemies/Snow_Zombie/zombiesnowroam" />
+        <property name="SoundAlert"     value="Enemies/Snow_Zombie/zombiesnowalert" />
+        <property name="SoundAttack"     value="Enemies/Snow_Zombie/zombiesnowattack" />
+        <property name="SoundHurt"     value="Enemies/Snow_Zombie/zombiesnowpain" />
+        <property name="SoundDeath"   value="Enemies/Snow_Zombie/zombiesnowdeath" />
+        <property name="SoundSense"  value="Enemies/Snow_Zombie/zombiesnowsense" />
+		<property name="SoundFootstepModifier"  value="Enemies/Snow_Zombie/zombiesnowfootstep" />
         <property name="HandItem"             value="handCopZombie" />
 	    <property name="WalkType"  value="6" />
 	    <property name="MaxHealth"    value="250" />
