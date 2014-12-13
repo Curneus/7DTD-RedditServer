@@ -51,8 +51,9 @@
 		hitmask="bodypart;bodypart" : Specifies the required hit location for the buff to be applied.
 									  Valid parts: body, head, leftarm, rightarm, leftleg, rightleg
 		mutex="name,name,name" : Specifies a list of buffs that, if already applied, will prevent this buff from being added.
+		requires="name,name,name" : Specifies a list of buffs that must be present for this buff to be cast
 		buffif="condition;condition;condition" : The buff will be cast on an entity if the specified conditions are met
-										condition = variable > value, variable < value, variable <= value, variable >= value
+										condition = variable greater value, variable less value, variable lequal value, variable gequal value
 		debuffif="condition;condition;condition" : see "buffif"
 		actions="action1;action2;action3" : When a buff is applied an optional set of actions can be performed.
 		                                    Actions are seperated by ';'.
@@ -78,6 +79,7 @@
 		                                     addimmunity(types)                  : Adds immunity to stat modifiers of the specified types, see types for a list above.
 		                                     
 		                                     debuff(name)                        : Name of the buff to remove
+											 buff(name)                          : Name of the buff to apply.
 		                                     setvalue(name, value)               : Sets the value of a stat
 		                                     resetvalue(name)                    : Resets the value of a stat to its original value including max modifiers.
 		                                     attach(prefab, bone, time (optional)) : Attaches the specified prefab to the specified bone of the entity that is being buffed.
@@ -91,6 +93,9 @@
 		                                                                          "frequency" is a timeString value which controls how often the variable is incremented.
 		                                                                          "duration" is a timeString value which controls how long the variable is incremented, if "0" then there is no max duration.
 		                                                                          "count" is the maximum number of times the variable can be incremented, or 0 for no limit.
+											 max(variable, maxValue)             : Clamps the maximum value of a variable.
+											 min(variable, minValue)             : Clamps the minimum value of a variable.
+											 setvar(variable, value)             : Sets a variable to the specified value.
 	
 	<modify> attributes:
 		id="number" : This attribute is required and is also saved with gamestate in the saved game. 
@@ -113,7 +118,61 @@
 		<modify id="0" stat="stamina" amount="-1" rate="1"/>
 		<modify id="1" stat="health" amount="-1" rate="1"/>
 	</buff>
+
+	<!-- 
 	
+	Drunkeness: Starts with the DrinkBeer buff, which is triggered by the Beer item each time a beer is consumed.
+	
+	DrinkBeer has no icon specified so it is invisible to the player, you can use hidden buffs to perform some more
+	advanced types of effects.
+	
+	DrinkBeer increments the "beers" variable. The "beers" variable controls several buffs:
+	
+	"Buzzed" is cast up to 5 beers, after which the player becomes "Drunk".
+	If the player drinks more than 8 beers they become "SickDrunk".
+	
+	If the player lets SickDrunk wear off they will have a hangover. Drinking during a hangover makes them instantly SickDrunk again.
+	
+	If the player drinks more than 14 beers they will have alcohol poisoning.
+	
+	The "MetabolizeBeer" buff will slowly reduce the beer variable.
+	
+	-->
+	<buff id="DrinkBeer" duration="1" actions="increment(beers, 1, 0, 0, 1)">
+		<modify id="0" stat="stamina" amount="2" rate="1"/>
+	</buff>
+	
+	<buff id="DrinkGrainAlcohol" duration="1" actions="increment(beers, 4, 0, 0, 1)">
+		<modify id="0" stat="stamina" amount="2" rate="1"/>
+	</buff>	
+
+	<buff id="MetabolizeBeer" buffif="beers greater 0" debuffif="beers less 1" actions="increment(beers, -1, 100t, 0, 0);min(beers, 0)"/>
+	
+	<buff id="Buzzed" mutex="Hangover,Drunk,SickDrunk,AlcoholPoisoning" buffif="beers greater 0" debuffif="beers less 1" duration="0" name="Beer Buzz" type="staminaup" description="A nice buzz." icon="buff_icon_beer" >
+		<modify id="0" stat="stamina" amount="2" rate="1"/>
+	</buff>
+
+	<buff id="Drunk" mutex="Hangover,SickDrunk,AlcoholPoisoning" buffif="beers greater 5" debuffif="beers less 2" actions="debuff(Buzzed)" name="Drunk" type="staminadown" description="You are drunk." icon="buff_icon_beer_hangover">
+		<modify id="0" stat="stamina" amount="5" rate="1"/>
+		<modify id="0" stat="speedmodifier" setValue="0.90"/>
+	</buff>
+	
+	<buff id="InstantSickDrunk" duration="1" buffif="beers greater 0" mutex="SickDrunk,AlcoholPoisoning" requires="Hangover" actions="setvar(beers, 9)" name="InstantSickDrunk" type="staminadown"/>
+
+	<buff id="SickDrunk" mutex="AlcoholPoisoning" buffif="beers greater 8" debuffif="beers less 1" actions="increment(@wellness, -0.5, 100t, 0, 0);debuff(Drunk);debuff(Hangover)" ondebuff="Hangover" name="Sick Drunk" type="staminadown" description="You are extremely drunk." icon="buff_icon_dysentery">
+		<modify id="0" stat="stamina" amount="-1" rate="1"/>
+		<modify id="0" stat="speedmodifier" setValue="0.70"/>
+	</buff>
+
+	<buff id="Hangover" mutex="AlcoholPoisoning" duration="1200t" name="Hangover" type="staminadown" description="You have a hangover." icon="buff_icon_food_poisoning">
+		<modify id="0" stat="stamina" amount="-1" rate="1"/>
+	</buff>
+	
+	<buff id="AlcoholPoisoning" buffif="beers greater 14" debuffif="beers less 9" ondebuff="SickDrunk" name="Alcohol Poisoning" type="bleeding" description="You have alcohol poisoning." actions="increment(@wellness, -1, 100t, 0, 0);debuff(SickDrunk);debuff(Hangover)" icon="buff_icon_food_poisoning" stack="extend">
+		<modify id="0" stat="stamina" amount="-5" rate="1"/>
+		<modify id="0" stat="speedmodifier" setValue="0.40"/>
+	</buff>
+
 	<!-- todo ideally this buff is only applied on a critical hit to the heart region and not applied to zombies. Armor would limit this too -->
 	<buff id="criticalBleedout" duration="10" name="Bleeding" type="bleeding" description="You are bleeding profusely. Use a bandage to stop the bleeding." icon="buff_icon_critical_hit">
 		<modify id="0" stat="stamina" amount="-15" rate="1" type="bleeding"/>
@@ -191,11 +250,11 @@
 		<modify id="0" stat="speedmodifier" setValue="0.80"/>			
 	</buff>
 	
-	<buff id="stunned" duration="4" name="Stunned" type="speedmodifier" description="You are stunned." icon="buff_icon_stunned">
-		<modify id="0" stat="speedmodifier" setValue="0.1"/>			
+	<buff id="stunned" duration="4" name="Stunned" type="speedmodifier" actions="increment(@wellness, -0.5, 0, 0, 1)" description="You are stunned." icon="buff_icon_stunned">
+		<modify id="0" stat="speedmodifier" setValue="0.1"/>
 	</buff>	
 	
-	<buff id="burning" ffcheck="true" debuffif="+water > 5" duration="15" name="Burning" description="You are on Fire." actions="attach(ParticleEffects/p_onFire, @impact);damage(10,1,0,0)" icon="buff_icon_fire"/>
+	<buff id="burning" debuffif="+water > 5" duration="15" name="Burning" description="You are on Fire." actions="attach(ParticleEffects/p_onFire, @impact);damage(10,1,0,0)" icon="buff_icon_fire"/>
 	
 	<buff id="wellnessExample" duration="10" type="wellness" name="Gain Wellness" description="You are getting health." icon="buff_icon_stunned">
 		<modify id="0" stat="wellness" amount="5" rate="1"/>
