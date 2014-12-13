@@ -70,7 +70,6 @@
     <biome name="snow">
 		    <spawn maxcount="2" respawndelay="4" time="Day" entitygroup="SnowZombies" />
 		    <spawn maxcount="2" respawndelay="4" time="Night" entitygroup="SnowZombies" />
-		    <spawn maxcount="1" respawndelay="5" time="Any"   entitygroup="ZombiesAll" />
        		<spawn maxcount="1" respawndelay="5" time="Any" entitygroup="AnimalsAll" spawnDeadChance="0.1" />
 		</biome>		
 	
@@ -347,130 +346,7 @@
 
 
 	
-	
-    <!-- Supply Crates  -->
-    <entityspawner name="SpawnSupplyCrates">
 
-		<day value="1">
-			<property name="StartSound"			value="SupplyDrops/Supply_Crate_Plane" />
-		
-			<property name="EntityGroupName"    value="SupplyCrates_Day1" />
-			<property name="Time"               value="Day" />
-
-			<property name="DelayBetweenSpawns" value="1" /> <!-- in full seconds -->
-			<property name="TotalAlive"         value="10" />
-
-			<property name="TotalPerWave"       value="3" />
-			<property name="DelayToNextWave"    value="10" /> <!-- in full seconds -->
-			<property name="NumberOfWaves"      value="2" />
-
-			<property name="SpawnOnGround"      value="false" />
-			<property name="IgnoreTrigger"      value="true" />
-		</day>
-		
-		<day value="2">
-			<property name="StartSound"			value="SupplyDrops/Supply_Crate_Plane" />
-		
-			<property name="EntityGroupName"    value="SupplyCrates_Day2" />
-			<property name="Time"               value="Day" />
-
-			<property name="DelayBetweenSpawns" value="1" /> <!-- in full seconds -->
-			<property name="TotalAlive"         value="10" />
-
-			<property name="TotalPerWave"       value="3" />
-			<property name="DelayToNextWave"    value="10" /> <!-- in full seconds -->
-			<property name="NumberOfWaves"      value="2" />
-
-			<property name="SpawnOnGround"      value="false" />
-			<property name="IgnoreTrigger"      value="true" />
-		</day>
-		
-		<day value="3">
-			<property name="StartSound"			value="SupplyDrops/Supply_Crate_Plane" />
-		
-			<property name="EntityGroupName"    value="SupplyCrates_Day3" />
-			<property name="Time"               value="Day" />
-
-			<property name="DelayBetweenSpawns" value="1" /> <!-- in full seconds -->
-			<property name="TotalAlive"         value="10" />
-
-			<property name="TotalPerWave"       value="4" />
-			<property name="DelayToNextWave"    value="10" /> <!-- in full seconds -->
-			<property name="NumberOfWaves"      value="1" />
-
-			<property name="SpawnOnGround"      value="false" />
-			<property name="IgnoreTrigger"      value="true" />
-		</day>		
-
-		<day value="4">
-			<property name="StartSound"			value="SupplyDrops/Supply_Crate_Plane" />
-		
-			<property name="EntityGroupName"    value="SupplyCrates_Day4" />
-			<property name="Time"               value="Day" />
-
-			<property name="DelayBetweenSpawns" value="1" /> <!-- in full seconds -->
-			<property name="TotalAlive"         value="10" />
-
-			<property name="TotalPerWave"       value="4" />
-			<property name="DelayToNextWave"    value="10" /> <!-- in full seconds -->
-			<property name="NumberOfWaves"      value="1" />
-
-			<property name="SpawnOnGround"      value="false" />
-			<property name="IgnoreTrigger"      value="true" />
-		</day>
-		
-		<day value="5">
-			<property name="StartSound"			value="SupplyDrops/Supply_Crate_Plane" />
-		
-			<property name="EntityGroupName"    value="SupplyCrates_Day5" />
-			<property name="Time"               value="Day" />
-
-			<property name="DelayBetweenSpawns" value="1" /> <!-- in full seconds -->
-			<property name="TotalAlive"         value="10" />
-
-			<property name="TotalPerWave"       value="4" />
-			<property name="DelayToNextWave"    value="10" /> <!-- in full seconds -->
-			<property name="NumberOfWaves"      value="1" />
-
-			<property name="SpawnOnGround"      value="false" />
-			<property name="IgnoreTrigger"      value="true" />
-		</day>		
-
-		<day value="6">
-			<property name="StartSound"			value="SupplyDrops/Supply_Crate_Plane" />
-		
-			<property name="EntityGroupName"    value="SupplyCrates_Day6" />
-			<property name="Time"               value="Day" />
-
-			<property name="DelayBetweenSpawns" value="1" /> <!-- in full seconds -->
-			<property name="TotalAlive"         value="10" />
-
-			<property name="TotalPerWave"       value="4" />
-			<property name="DelayToNextWave"    value="10" /> <!-- in full seconds -->
-			<property name="NumberOfWaves"      value="1" />
-
-			<property name="SpawnOnGround"      value="false" />
-			<property name="IgnoreTrigger"      value="true" />
-		</day>		
-		
-		<day value="*">
-			<property name="StartSound"			value="SupplyDrops/Supply_Crate_Plane" />
-		
-			<property name="EntityGroupName"    value="SupplyCrates_Day7" />
-			<property name="Time"               value="Day" />
-
-			<property name="DelayBetweenSpawns" value="1" /> <!-- in full seconds -->
-			<property name="TotalAlive"         value="10" />
-
-			<property name="TotalPerWave"       value="5" />
-			<property name="DelayToNextWave"    value="10" /> <!-- in full seconds -->
-			<property name="NumberOfWaves"      value="1" />
-
-			<property name="SpawnOnGround"      value="false" />
-			<property name="IgnoreTrigger"      value="true" />
-		</day>
-	  
-    </entityspawner>	
     
     <!-- If you want dynamic spawners for each day, create a spawner that is named DynamicSpawner -->
 	
