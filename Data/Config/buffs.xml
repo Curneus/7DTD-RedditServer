@@ -194,10 +194,9 @@
 		<modify id="1" stat="health" amount="-5" rate="60"/>
 	</buff>			
 
-	<buff id="foodPoisoning" duration="60" name="Food Poisoning" type="sickness" actions="increment(@wellness, -0.5, 0, 0, 1)"  description="You feel sick to your stomach." icon="buff_icon_food_poisoning">
+	<buff id="foodPoisoning" duration="30" name="Food Poisoning" type="sickness" actions="increment(@wellness, -0.1, 1, 0, 0)"  description="You feel sick to your stomach." icon="buff_icon_food_poisoning">
 		<modify id="0" stat="stamina" amount="-10" rate="1"/>
-		<modify id="1" stat="health" amount="-1" rate="4"/>
-	</buff>	
+	</buff>	 
 	
 	<buff id="steroids" duration="2400t" actions="addimmunity(sickness)" name="Steroids" description="Reduces swelling and supresses the symptoms of infection." icon="buff_icon_medicine"/>
 	
