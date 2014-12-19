@@ -59,8 +59,8 @@
               <decoration type="block" blockname="rock05" prob =".001" />
               <decoration type="block" blockname="rock06" prob =".001" />
               <decoration type="block" blockname="rock07" prob =".001" />
-              <decoration type="block" blockname="rockResource" prob =".001" rotatemax="3"/>
-              <decoration type="block" blockname="rockResource02" prob =".001" rotatemax="3"/>
+              <decoration type="block" blockname="rockResource" prob =".025" rotatemax="3"/>
+              <decoration type="block" blockname="rockResource02" prob =".025" rotatemax="3"/>
               <decoration type="block" blockname="birdnest" prob ="0.001" />
               <decoration type="block" blockname="lootForest" prob="0.001"/>
             </decorations>
@@ -102,12 +102,11 @@
           <!--<decoration type="prefab" name="tree_pine_01" prob="0" prob_max="2" />-->
             <decorations>
                 <decoration type="block" blockname="lootForest" prob="0.00025"/>
-				<decoration type="block" blockname="blueberry" prob="0.001"/>
                 <decoration type="block" blockname="rock05" prob =".005" />
                 <decoration type="block" blockname="rock06" prob =".005" />
                 <decoration type="block" blockname="rock07" prob =".005" />
-                <decoration type="block" blockname="rockResource" prob =".001" rotatemax="3"/>
-                <decoration type="block" blockname="rockResource02" prob =".001" rotatemax="3"/>
+                <decoration type="block" blockname="rockResource" prob =".0005" rotatemax="3"/>
+                <decoration type="block" blockname="rockResource02" prob =".0005" rotatemax="3"/>
                 <decoration type="block" blockname="birdnest" prob ="0.0005" />
                 <decoration type="block" blockname="snowyGrassDiagonal" prob =".1" />
                 <decoration type="block" blockname="WinterEverGreen" prob="0.013" rotatemax="7"/>
@@ -168,7 +167,7 @@
                 <decoration type="block" blockname="rock02" prob=".005"/>
                 <decoration type="block" blockname="rock04" prob=".005"/>
                 <decoration type="block" blockname="DeadShrub" prob ="0.0005" />
-                <decoration type="block" blockname="rockResource02" prob =".001" rotatemax="3"/>
+                <decoration type="block" blockname="rockResource02" prob =".0005" rotatemax="3"/>
                 <decoration type="block" blockname="birdnest" prob ="0.0005" />
                 <decoration type="block" blockname="plantChrysanthemum" prob="0.001"/>
                 <decoration type="block" blockname="Bush1" prob="0.015"/>
@@ -251,8 +250,8 @@
                 <decoration type="block" blockname="rock01" prob =".005" />                
                 <decoration type="block" blockname="rock02" prob =".005" />
                 <decoration type="block" blockname="rock04" prob =".005" />
-                <decoration type="block" blockname="rockResource" prob =".001" rotatemax="3"/>
-                <decoration type="block" blockname="rockResource02" prob =".001" rotatemax="3"/>
+                <decoration type="block" blockname="rockResource" prob =".0005" rotatemax="3"/>
+                <decoration type="block" blockname="rockResource02" prob =".0005" rotatemax="3"/>
                 <decoration type="block" blockname="birdnest" prob ="0.0005" />
                 <decoration type="block" blockname="DeadShrub" prob="0.01" rotatemax="7"/>     
                 <decoration type="block" blockname="MountainPine6m" prob="0.007" rotatemax="7"/>
@@ -291,7 +290,7 @@
 			</subbiome>
 
         <!-- Plains Sub Biome Thick Grass -->
-        <subbiome prob="0.1">
+        <subbiome prob="0.05">
           <layers>
             <layer depth="1" blockname="plainsGround" />
           </layers>
@@ -300,8 +299,8 @@
             <decoration type="block" blockname="desertShrub" prob="0.1"/>
             <decoration type="block" blockname="goldenrod" prob="0.02"/>
             <decoration type="block" blockname="cotton" prob="0.03"/>
-            <decoration type="prefab" name="cornstalk_01" prob=".009" rotatemax="7"/>
-            <decoration type="prefab" name="cornstalk_02" prob=".008" rotatemax="7"/>
+            <decoration type="prefab" name="cornstalk_01" prob=".005" rotatemax="7"/>
+            <decoration type="prefab" name="cornstalk_02" prob=".004" rotatemax="7"/>
             <decoration type="block" blockname="lootPlains" prob="0.00025"/>
           </decorations>
         </subbiome>
@@ -435,8 +434,8 @@
 				<decoration type="block" blockname="rock01" prob=".001" rotatemax="3"/>
 				<decoration type="block" blockname="rock02" prob=".001" rotatemax="3"/>
 				<decoration type="block" blockname="rock04" prob=".001" rotatemax="3"/>
-				<decoration type="block" blockname="rockResource" prob =".0009" rotatemax="3"/>
-				<decoration type="block" blockname="rockResource02" prob =".0009" rotatemax="3"/>
+				<decoration type="block" blockname="rockResource" prob =".0005" rotatemax="3"/>
+				<decoration type="block" blockname="rockResource02" prob =".0005" rotatemax="3"/>
 				<decoration type="block" blockname="lootDesert" prob="0.00025"/>
 				<decoration type="block" blockname="deadPineLeaf" prob ="0.010" />
 				<decoration type="block" blockname="brownGrassDiagonal" prob =".25" />
@@ -522,8 +521,8 @@
 				<decoration type="block" blockname="rock01" prob=".001" rotatemax="3"/>
 				<decoration type="block" blockname="rock02" prob=".005" rotatemax="3"/>
 				<decoration type="block" blockname="rock04" prob=".001" rotatemax="3"/>
-				<decoration type="block" blockname="rockResource" prob =".0009" rotatemax="3"/>
-				<decoration type="block" blockname="rockResource02" prob =".0009" rotatemax="3"/>
+				<decoration type="block" blockname="rockResource" prob =".0005" rotatemax="3"/>
+				<decoration type="block" blockname="rockResource02" prob =".0005" rotatemax="3"/>
 				<decoration type="block" blockname="brownGrassDiagonal" prob =".15" />
 				<decoration type="block" blockname="tallGrassDiagonal" prob =".35" />
 				<decoration type="block" blockname="driftwood" prob ="0.001" rotatemax="3"/>
@@ -616,8 +615,8 @@
             <decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
             <decoration type="block" blockname="rock02" prob=".004" rotatemax="3"/>
             <decoration type="block" blockname="rock04" prob=".004" rotatemax="3"/>
-            <decoration type="block" blockname="rockResource" prob =".0009" rotatemax="3"/>
-            <decoration type="block" blockname="rockResource02" prob =".0009" rotatemax="3"/>
+            <decoration type="block" blockname="rockResource" prob =".0005" rotatemax="3"/>
+            <decoration type="block" blockname="rockResource02" prob =".0005" rotatemax="3"/>
             <decoration type="block" blockname="birdnest" prob ="0.0005" />
             <decoration type="block" blockname="cinderBlocks01" prob=".006" rotatemax="7"/>
             <decoration type="block" blockname="cinderBlocks02" prob=".006" rotatemax="7"/>
@@ -713,8 +712,8 @@
           <decoration type="block" blockname="rock01" prob=".005" rotatemax="3"/>
           <decoration type="block" blockname="rock02" prob=".005" rotatemax="3"/>
           <decoration type="block" blockname="rock04" prob=".005" rotatemax="3"/>
-          <decoration type="block" blockname="rockResource" prob =".0009" rotatemax="3"/>
-          <decoration type="block" blockname="rockResource02" prob =".0009" rotatemax="3"/>
+          <decoration type="block" blockname="rockResource" prob =".0005" rotatemax="3"/>
+          <decoration type="block" blockname="rockResource02" prob =".0005" rotatemax="3"/>
           <decoration type="block" blockname="birdnest" prob ="0.0005" />
            <decoration type="block" blockname="brownGrassDiagonal" prob =".02" />
 		      <decoration type="block" blockname="BurntPine01" prob="0.005" rotatemax="7"/>
@@ -854,8 +853,8 @@
         <decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
         <decoration type="block" blockname="rock02" prob=".004" rotatemax="3"/>
         <decoration type="block" blockname="rock04" prob=".004" rotatemax="3"/>
-        <decoration type="block" blockname="rockResource" prob =".0009" rotatemax="3"/>
-        <decoration type="block" blockname="rockResource02" prob =".0009" rotatemax="3"/>
+        <decoration type="block" blockname="rockResource" prob =".0005" rotatemax="3"/>
+        <decoration type="block" blockname="rockResource02" prob =".0005" rotatemax="3"/>
         <decoration type="block" blockname="birdnest" prob ="0.0005" />
         <decoration type="block" blockname="cinderBlocks01" prob=".006" rotatemax="7"/>
         <decoration type="block" blockname="cinderBlocks02" prob=".006" rotatemax="7"/>
