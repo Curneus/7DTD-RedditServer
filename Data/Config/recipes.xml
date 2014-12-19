@@ -395,11 +395,11 @@
     <ingredient name="stick" count="1" grid="0, 0" />
     <ingredient name="stick" count="1" grid="1, 0" />
   </recipe>
-  <recipe name="cobblestones" count="2" scrapable="False" craft_time="5">
+  <recipe name="cobblestones" count="4" scrapable="False" craft_time="5">
     <ingredient name="cement" count="1" grid="0, -1" />
     <ingredient name="stone" count="1" grid="0, 0" />
   </recipe>
-  <recipe name="cobblestones" count="1" scrapable="False" craft_time="5">
+  <recipe name="cobblestones" count="4" scrapable="False" craft_time="5">
     <ingredient name="cement" count="1" grid="0, -1" />
     <ingredient name="destroyedStone" count="1" grid="0, 0" />
   </recipe>
@@ -568,17 +568,17 @@
   <recipe name="goldenrodSeed" count="4" scrapable="False" craft_time="1">
     <ingredient name="goldenrod" count="1" grid="0, 0" />
   </recipe>
-  <recipe name="gravel" count="1" scrapable="False" craft_time="10">
-    <ingredient name="destroyedStone" count="1" grid="0, 0" />
-  </recipe>
-  <recipe name="gravel" count="2" scrapable="False" craft_time="10">
-    <ingredient name="cinderBlocks01" count="1" grid="0, 0" />
-  </recipe>
   <recipe name="gravel" count="1" scrapable="False" craft_time="5">
     <ingredient name="rockSmall" count="1" grid="0, -1" />
     <ingredient name="rockSmall" count="1" grid="1, -1" />
     <ingredient name="rockSmall" count="1" grid="0, 0" />
     <ingredient name="rockSmall" count="1" grid="1, 0" />
+  </recipe>
+  <recipe name="gravel" count="1" scrapable="False" craft_time="10">
+    <ingredient name="destroyedStone" count="1" grid="0, 0" />
+  </recipe>
+  <recipe name="gravel" count="2" scrapable="False" craft_time="10">
+    <ingredient name="cinderBlocks01" count="1" grid="0, 0" />
   </recipe>
   <recipe name="gunPowder" count="10" scrapable="False" craft_time="1">
     <ingredient name="coal" count="1" grid="0, -1" />
@@ -1488,59 +1488,59 @@
     <ingredient name="sharpStone" count="1" grid="2, 0" />
   </recipe>
   <recipe name="storageAmmo" count="1" scrapable="False" craft_time="5">
+    <ingredient name="woodPlank" count="1" grid="-1, -1" />
     <ingredient name="woodPlank" count="1" grid="0, -1" />
     <ingredient name="woodPlank" count="1" grid="1, -1" />
-    <ingredient name="woodPlank" count="1" grid="2, -1" />
-    <ingredient name="woodPlank" count="1" grid="0, 0" />
-    <ingredient name="bulletCasing" count="1" grid="1, 0" />
-    <ingredient name="woodPlank" count="1" grid="2, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 0" />
+    <ingredient name="bulletCasing" count="1" grid="0, 0" />
+    <ingredient name="woodPlank" count="1" grid="1, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 1" />
     <ingredient name="woodPlank" count="1" grid="0, 1" />
     <ingredient name="woodPlank" count="1" grid="1, 1" />
-    <ingredient name="woodPlank" count="1" grid="2, 1" />
   </recipe>
   <recipe name="storageBuilding" count="1" scrapable="False" craft_time="5">
+    <ingredient name="woodPlank" count="1" grid="-1, -1" />
     <ingredient name="woodPlank" count="1" grid="0, -1" />
     <ingredient name="woodPlank" count="1" grid="1, -1" />
-    <ingredient name="woodPlank" count="1" grid="2, -1" />
-    <ingredient name="woodPlank" count="1" grid="0, 0" />
-    <ingredient name="stone" count="1" grid="1, 0" />
-    <ingredient name="woodPlank" count="1" grid="2, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 0" />
+    <ingredient name="stone" count="1" grid="0, 0" />
+    <ingredient name="woodPlank" count="1" grid="1, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 1" />
     <ingredient name="woodPlank" count="1" grid="0, 1" />
     <ingredient name="woodPlank" count="1" grid="1, 1" />
-    <ingredient name="woodPlank" count="1" grid="2, 1" />
   </recipe>
   <recipe name="storageExplosives" count="1" scrapable="False" craft_time="5">
+    <ingredient name="woodPlank" count="1" grid="-1, -1" />
     <ingredient name="woodPlank" count="1" grid="0, -1" />
     <ingredient name="woodPlank" count="1" grid="1, -1" />
-    <ingredient name="woodPlank" count="1" grid="2, -1" />
-    <ingredient name="woodPlank" count="1" grid="0, 0" />
-    <ingredient name="gunPowder" count="1" grid="1, 0" />
-    <ingredient name="woodPlank" count="1" grid="2, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 0" />
+    <ingredient name="gunPowder" count="1" grid="0, 0" />
+    <ingredient name="woodPlank" count="1" grid="1, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 1" />
     <ingredient name="woodPlank" count="1" grid="0, 1" />
     <ingredient name="woodPlank" count="1" grid="1, 1" />
-    <ingredient name="woodPlank" count="1" grid="2, 1" />
   </recipe>
   <recipe name="storageFood" count="1" scrapable="False" craft_time="5">
+    <ingredient name="woodPlank" count="1" grid="-1, -1" />
     <ingredient name="woodPlank" count="1" grid="0, -1" />
     <ingredient name="woodPlank" count="1" grid="1, -1" />
-    <ingredient name="woodPlank" count="1" grid="2, -1" />
-    <ingredient name="woodPlank" count="1" grid="0, 0" />
-    <ingredient name="canEmpty" count="1" grid="1, 0" />
-    <ingredient name="woodPlank" count="1" grid="2, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 0" />
+    <ingredient name="canEmpty" count="1" grid="0, 0" />
+    <ingredient name="woodPlank" count="1" grid="1, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 1" />
     <ingredient name="woodPlank" count="1" grid="0, 1" />
     <ingredient name="woodPlank" count="1" grid="1, 1" />
-    <ingredient name="woodPlank" count="1" grid="2, 1" />
   </recipe>
   <recipe name="storageWeapons" count="1" scrapable="False" craft_time="5">
+    <ingredient name="woodPlank" count="1" grid="-1, -1" />
     <ingredient name="woodPlank" count="1" grid="0, -1" />
     <ingredient name="woodPlank" count="1" grid="1, -1" />
-    <ingredient name="woodPlank" count="1" grid="2, -1" />
-    <ingredient name="woodPlank" count="1" grid="0, 0" />
-    <ingredient name="crossbowBolt" count="1" grid="1, 0" />
-    <ingredient name="woodPlank" count="1" grid="2, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 0" />
+    <ingredient name="crossbowBolt" count="1" grid="0, 0" />
+    <ingredient name="woodPlank" count="1" grid="1, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 1" />
     <ingredient name="woodPlank" count="1" grid="0, 1" />
     <ingredient name="woodPlank" count="1" grid="1, 1" />
-    <ingredient name="woodPlank" count="1" grid="2, 1" />
   </recipe>
   <recipe name="tnt" count="1" scrapable="False" craft_time="30">
     <ingredient name="yuccaFibers" count="1" grid="0, -2" />
@@ -1718,11 +1718,11 @@
     <ingredient name="shortMetalPipe" count="1" grid="0, 1" />
     <ingredient name="shortMetalPipe" count="1" grid="0, 2" />
   </recipe>
-  <recipe name="yuccaFibers" count="4" scrapable="False" craft_time="5">
-    <ingredient name="plantYucca" count="1" grid="0, 0" />
-  </recipe>
-  <recipe name="yuccaFibers" count="1" scrapable="False" craft_time="5">
+  <recipe name="yuccaFibers" count="1" scrapable="False" craft_time="2">
     <ingredient name="brownGrassDiagonal" count="1" grid="0, 0" />
+  </recipe>
+  <recipe name="yuccaFibers" count="4" scrapable="False" craft_time="2">
+    <ingredient name="plantYucca" count="1" grid="0, 0" />
   </recipe>
   <recipe name="cloth" count="2" scrapable="False" craft_time="1">
     <ingredient name="clothBoots" count="1" grid="0, 0" />
