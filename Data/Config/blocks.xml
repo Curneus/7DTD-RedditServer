@@ -1120,23 +1120,20 @@
     <!-- <drop event="Destroy" name="scrapIron" count="3,5" prob="1" /> -->
     <property name="Group" value="Furniture/Decor" />
   </block>
+  <!-- modded to require upgrade to allow filling emptyGasCan -->
   <block id="350" name="gasPump">
-    <property name="Class" value="TNT" />
+    <!--<property name="Class" value="TNT" />-->
     <property name="Material" value="metal_thin" />
     <property name="Shape" value="Ext3dModel" />
     <property name="Mesh" value="models" />
     <property name="Model" value="Industrial/gas_pump" param1="main_mesh" />
-    <property class="Explosion">
-      <property name="ParticleIndex" value="4" />
-      <!-- which prefab/particle is used -->
-      <property name="RadiusBlocks" value="5" />
-      <!-- damage radius for blocks -->
-      <property name="BlockDamage" value="120" />
-      <!-- damage for blocks in the center of the explosion -->
-      <property name="RadiusEntities" value="5" />
-      <!-- damage radius for entities -->
-      <property name="EntityDamage" value="100" />
-      <!-- damage for entities in the center of the explosion -->
+    <!-- modded to remove explosion but upgraded gasPump will explode -->
+    <!-- modded to add UpgradeBlock -->
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="workingGasPump" />
+      <property name="Item" value="forgedIron" />
+      <property name="ItemCount" value="128" />
+      <property name="UpgradeHitCount" value="50" />
     </property>
     <drop event="Destroy" count="0" />
     <property name="LPHardnessScale" value="0" />
@@ -9631,6 +9628,26 @@
 	<property name="HeatMapFrequency" value="25"/>
 	<property name="DowngradeBlock" value="wallOven" />
     <drop event="Destroy" count="0" />
+  </block>
+  
+  <!-- upgrading gasPump to allow filling emptyGasCan -->
+  
+  <block id="3002" name="workingGasPump">
+    <property name="Class" value="TNT" />
+    <property name="Material" value="metal_thin" />
+    <property name="Shape" value="Ext3dModel" />
+    <property name="Mesh" value="models" />
+    <property name="Model" value="Industrial/gas_pump" param1="main_mesh" />
+    <property class="Explosion">
+      <property name="ParticleIndex" value="4" />
+      <property name="RadiusBlocks" value="5" />
+      <property name="BlockDamage" value="120" />
+      <property name="RadiusEntities" value="5" />
+      <property name="EntityDamage" value="100" />
+    </property>
+    <drop event="Destroy" count="0" />
+    <property name="LPHardnessScale" value="0" />
+    <!-- disable LP for TNT blocks -->
   </block>
   
 </blocks>
