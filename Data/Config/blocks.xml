@@ -1120,23 +1120,37 @@
     <!-- <drop event="Destroy" name="scrapIron" count="3,5" prob="1" /> -->
     <property name="Group" value="Furniture/Decor" />
   </block>
-  <!-- modded to require upgrade to allow filling emptyGasCan -->
   <block id="350" name="gasPump">
-    <!--<property name="Class" value="TNT" />-->
+    <!-- modded to comment out class TNT since conflicts with UpgradeBlock -->
+    <!-- <property name="Class" value="TNT" /> -->
     <property name="Material" value="metal_thin" />
     <property name="Shape" value="Ext3dModel" />
     <property name="Mesh" value="models" />
     <property name="Model" value="Industrial/gas_pump" param1="main_mesh" />
-    <!-- modded to remove explosion but upgraded gasPump will explode -->
     <!-- modded to add UpgradeBlock -->
     <property class="UpgradeBlock">
       <property name="ToBlock" value="workingGasPump" />
       <property name="Item" value="forgedIron" />
       <property name="ItemCount" value="128" />
       <property name="UpgradeHitCount" value="50" />
-    </property>
-    <drop event="Destroy" count="0" />
-    <property name="LPHardnessScale" value="0" />
+    </property> 
+    <!-- modded to comment out Explosion since conflicts with UpgradeBlock -->
+    <!-- <property class="Explosion"> -->
+      <!-- <property name="ParticleIndex" value="4" /> -->
+      <!-- which prefab/particle is used -->
+      <!-- <property name="RadiusBlocks" value="5" /> -->
+      <!-- damage radius for blocks -->
+      <!-- <property name="BlockDamage" value="120" /> -->
+      <!-- damage for blocks in the center of the explosion -->
+      <!-- <property name="RadiusEntities" value="5" /> -->
+      <!-- damage radius for entities -->
+      <!-- <property name="EntityDamage" value="100" /> -->
+      <!-- damage for entities in the center of the explosion -->
+    <!-- </property> -->
+    <!-- modded to drop scrapIron since no boom unless upgraded -->
+    <drop event="Destroy" name="scrapIron" count="2,6" prob="1" />
+    <!-- modded to comment out LPHardnessScale -->
+    <!-- <property name="LPHardnessScale" value="0" /> -->
     <!-- disable LP for TNT blocks -->
   </block>
   <block id="351" name="wallTorch">
@@ -9600,8 +9614,7 @@
     <drop event="Destroy" count="0" />
   </block>         
 
-  <!-- upgrading ovens to work as campfires -->
-  
+  <!-- custom workingOven block -->
   <block id="3000" name="workingOven">
     <property name="Class" value="Campfire" />
     <property name="Material" value="metal" />
@@ -9617,6 +9630,7 @@
     <drop event="Destroy" name="scrapIron" count="2,6" prob="1" />
   </block>
 
+  <!-- custom workingWallOven block -->
   <block id="3001" name="workingWallOven">
     <property name="Class" value="Campfire" />
     <property name="Material" value="wood_weak" />
@@ -9629,9 +9643,8 @@
 	<property name="DowngradeBlock" value="wallOven" />
     <drop event="Destroy" count="0" />
   </block>
-  
-  <!-- upgrading gasPump to allow filling emptyGasCan -->
-  
+
+  <!-- custom workingGasPump block -->
   <block id="3002" name="workingGasPump">
     <property name="Class" value="TNT" />
     <property name="Material" value="metal_thin" />
@@ -9647,7 +9660,6 @@
     </property>
     <drop event="Destroy" count="0" />
     <property name="LPHardnessScale" value="0" />
-    <!-- disable LP for TNT blocks -->
   </block>
   
 </blocks>
