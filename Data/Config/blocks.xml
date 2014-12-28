@@ -9653,10 +9653,10 @@
     <property name="Model" value="Industrial/gas_pump" param1="main_mesh" />
     <property class="Explosion">
       <property name="ParticleIndex" value="4" />
-      <property name="RadiusBlocks" value="5" />
-      <property name="BlockDamage" value="120" />
-      <property name="RadiusEntities" value="5" />
-      <property name="EntityDamage" value="100" />
+      <property name="RadiusBlocks" value="20" />
+      <property name="BlockDamage" value="1200" />
+      <property name="RadiusEntities" value="20" />
+      <property name="EntityDamage" value="1000" />
     </property>
     <drop event="Destroy" count="0" />
     <property name="LPHardnessScale" value="0" />
