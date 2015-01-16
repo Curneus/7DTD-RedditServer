@@ -3464,7 +3464,7 @@
   </recipe>
   <recipe name="endTableLamp" count="1" scrapable="False" craft_time="15">
     <ingredient name="coal" count="1" grid="-1, 0" />
-    <ingredient name="coalTorch" count="1" grid="-1, -2" />
+    <ingredient name="Torch" count="1" grid="-1, -2" />
     <ingredient name="woodPlank" count="1" grid="-2, -1" />
     <ingredient name="woodPlank" count="1" grid="-1, -1" />
     <ingredient name="woodPlank" count="1" grid="0, -1" />
@@ -3999,8 +3999,7 @@
     <ingredient name="woodPlank" count="1" grid="0, 1" />
     <ingredient name="woodPlank" count="1" grid="0, 2" />
     <ingredient name="woodPlank" count="1" grid="-1, 1" />
-    <ingredient count="1" grid="-1, 0" name="coal" />
-    <ingredient name="coalTorch" count="1" grid="-1, -2" />
+    <ingredient name="coal" count="1" grid="-1, 0" />
   </recipe>
   <recipe name="lootCrateShotgunMessiah" count="1" scrapable="True" craft_time="5">
     <ingredient name="woodPlank" count="1" grid="-1, -2" />
