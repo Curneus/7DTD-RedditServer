@@ -4071,4 +4071,27 @@
     <ingredient name="cornMeal" count="1" grid="1, -1" />
     <ingredient name="shortMetalPipe" count="1" grid="2, -2" />
   </recipe>
+    <recipe name="rockResource" count="1" scrapable="True" craft_time="5">
+    <ingredient name="rockSmall" count="1" grid="0, -2" />
+    <ingredient name="rockSmall" count="1" grid="-1, -2" />
+    <ingredient name="rockSmall" count="1" grid="1, -2" />
+    <ingredient name="rockSmall" count="1" grid="-1, -1" />
+    <ingredient name="rockSmall" count="1" grid="1, -1" />
+    <ingredient name="rockSmall" count="1" grid="2, -1" />
+    <ingredient name="rockSmall" count="1" grid="2, 0" />
+    <ingredient name="rockSmall" count="1" grid="-2, -1" />
+    <ingredient name="rockSmall" count="1" grid="-2, 0" />
+    <ingredient name="rockSmall" count="1" grid="-2, 1" />
+    <ingredient name="rockSmall" count="1" grid="2, 1" />
+    <ingredient name="rockSmall" count="1" grid="1, 1" />
+    <ingredient name="rockSmall" count="1" grid="1, 2" />
+    <ingredient name="rockSmall" count="1" grid="0, 2" />
+    <ingredient name="rockSmall" count="1" grid="-1, 2" />
+    <ingredient name="rockSmall" count="1" grid="-1, 1" />
+    <ingredient name="ironFragment" count="1" grid="0, -1" />
+    <ingredient name="ironFragment" count="1" grid="0, 0" />
+    <ingredient name="ironFragment" count="1" grid="0, 1" />
+    <ingredient name="ironFragment" count="1" grid="1, 0" />
+    <ingredient name="ironFragment" count="1" grid="-1, 0" />
+  </recipe>
 </recipes>
