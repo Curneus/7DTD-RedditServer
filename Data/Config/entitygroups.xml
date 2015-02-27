@@ -7,13 +7,21 @@
         <entity name="zombie05" />
         <entity name="zombie06" />
         <entity name="zombie07" />
-		<entity name="zombiegal01" /> 
-		<entity name="zombiegal02" />
-		<entity name="zombiegal03" />
-		<entity name="zombiegal04" />
-		<entity name="fatzombie" />
-		<entity name="zombiecrawler" />
-		<entity name="spiderzombie" prob="0.05"/>
+	<entity name="zombiegal01" /> 
+	<entity name="zombiegal02" />
+	<entity name="zombiegal03" />
+	<entity name="zombiegal04" />
+	<entity name="fatzombie" />
+	<entity name="zombiecrawler" />
+	<entity name="spiderzombie" prob="0.05"/>
+        <entity name="reddit01" prob="0.25" />
+        <entity name="reddit02" prob="0.25" />
+        <entity name="reddit03" prob="0.25" />
+        <entity name="reddit04" prob="0.25" />
+        <entity name="redditgal01" prob="0.25" />
+        <entity name="redditgal02" prob="0.25" />
+        <entity name="redditgal03" prob="0.25" />
+        <entity name="redditgal04" prob="0.25" />
     </entitygroup>
 	
     <entitygroup name="ZombiesNight">
@@ -21,14 +29,22 @@
         <entity name="zombie05" />
         <entity name="zombie06" />
         <entity name="zombie07" />
-		<entity name="zombiegal01" /> 
-		<entity name="zombiegal02" />
-		<entity name="zombiegal03" />
-		<entity name="zombiegal04" />
-		<entity name="fatzombie" />
-		<entity name="hornet" prob="0.05" />
-		<entity name="zombiedog" prob="0.05" />
-		<entity name="zombiecrawler" />
+	<entity name="zombiegal01" /> 
+	<entity name="zombiegal02" />
+	<entity name="zombiegal03" />
+	<entity name="zombiegal04" />
+	<entity name="fatzombie" />
+	<entity name="hornet" prob="0.05" />
+	<entity name="zombiedog" prob="0.05" />
+	<entity name="zombiecrawler" />
+        <entity name="reddit01" prob="0.25" />
+        <entity name="reddit02" prob="0.25" />
+        <entity name="reddit03" prob="0.25" />
+        <entity name="reddit04" prob="0.25" />
+        <entity name="redditgal01" prob="0.25" />
+        <entity name="redditgal02" prob="0.25" />
+        <entity name="redditgal03" prob="0.25" />
+        <entity name="redditgal04" prob="0.25" />
     </entitygroup>
     
     
@@ -37,17 +53,25 @@
         <entity name="zombie05" />
         <entity name="zombie06" />
         <entity name="zombie07" />
-		<entity name="zombiegal01" /> 
-		<entity name="zombiegal02" />
-		<entity name="zombiegal03" />
-		<entity name="zombiegal04" />
-		<entity name="fatzombie" />
-		<entity name="hornet" />
-		<entity name="zombiedog" />
-		<entity name="zombiecrawler" />
-		<entity name="fatzombiecop" />
-		<entity name="burntzombie" />
-		<entity name="spiderzombie" />		
+	<entity name="zombiegal01" /> 
+	<entity name="zombiegal02" />
+	<entity name="zombiegal03" />
+	<entity name="zombiegal04" />
+	<entity name="fatzombie" />
+	<entity name="hornet" />
+	<entity name="zombiedog" />
+	<entity name="zombiecrawler" />
+	<entity name="fatzombiecop" />
+	<entity name="burntzombie" />
+	<entity name="spiderzombie" />		
+        <entity name="reddit01" prob="0.25" />
+        <entity name="reddit02" prob="0.25" />
+        <entity name="reddit03" prob="0.25" />
+        <entity name="reddit04" prob="0.25" />
+        <entity name="redditgal01" prob="0.25" />
+        <entity name="redditgal02" prob="0.25" />
+        <entity name="redditgal03" prob="0.25" />
+        <entity name="redditgal04" prob="0.25" />
     </entitygroup>	
     
     <entitygroup name="ZombiesWastelandNight">
@@ -55,17 +79,25 @@
         <entity name="zombie05" prob="0.05"/>
         <entity name="zombie06" prob="0.05"/>
         <entity name="zombie07" prob="0.05"/>
-		<entity name="zombiegal01" prob="0.05"/> 
-		<entity name="zombiegal02" prob="0.05"/>
-		<entity name="zombiegal03" prob="0.05"/>
-		<entity name="zombiegal04" prob="0.05"/>
-		<entity name="fatzombie" prob="0.05"/>
-		<entity name="hornet" prob="0.15"/>
-		<entity name="zombiedog" prob="0.15"/>
-		<entity name="zombiecrawler" prob="0.05"/>
-		<entity name="fatzombiecop" prob="0.15"/>
-		<entity name="burntzombie" prob="0.05"/>
-		<entity name="spiderzombie" prob="0.2"/>
+	<entity name="zombiegal01" prob="0.05"/> 
+	<entity name="zombiegal02" prob="0.05"/>
+	<entity name="zombiegal03" prob="0.05"/>
+	<entity name="zombiegal04" prob="0.05"/>
+	<entity name="fatzombie" prob="0.05"/>
+	<entity name="hornet" prob="0.15"/>
+	<entity name="zombiedog" prob="0.15"/>
+	<entity name="zombiecrawler" prob="0.05"/>
+	<entity name="fatzombiecop" prob="0.15"/>
+	<entity name="burntzombie" prob="0.05"/>
+	<entity name="spiderzombie" prob="0.2"/>
+        <entity name="reddit01" prob="0.25" />
+        <entity name="reddit02" prob="0.25" />
+        <entity name="reddit03" prob="0.25" />
+        <entity name="reddit04" prob="0.25" />
+        <entity name="redditgal01" prob="0.25" />
+        <entity name="redditgal02" prob="0.25" />
+        <entity name="redditgal03" prob="0.25" />
+        <entity name="redditgal04" prob="0.25" />
     </entitygroup>	
     
     <entitygroup name="ZombiesWastelandNight2">
@@ -73,16 +105,24 @@
         <entity name="zombie05" prob="0.03"/>
         <entity name="zombie06" prob="0.03"/>
         <entity name="zombie07" prob="0.03"/>
-		<entity name="zombiegal01" prob="0.03"/> 
-		<entity name="zombiegal02" prob="0.03"/>
-		<entity name="zombiegal03" prob="0.03"/>
-		<entity name="zombiegal04" prob="0.03"/>
-		<entity name="fatzombie" prob="0.15"/>
-		<entity name="hornet" prob="0.15"/>
-		<entity name="zombiedog" prob="0.20"/>
-		<entity name="zombiecrawler" prob="0.03"/>
-		<entity name="fatzombiecop" prob="0.2"/>
-		<entity name="burntzombie" prob="0.03"/>
+	<entity name="zombiegal01" prob="0.03"/> 
+	<entity name="zombiegal02" prob="0.03"/>
+	<entity name="zombiegal03" prob="0.03"/>
+	<entity name="zombiegal04" prob="0.03"/>
+	<entity name="fatzombie" prob="0.15"/>
+	<entity name="hornet" prob="0.15"/>
+	<entity name="zombiedog" prob="0.20"/>
+	<entity name="zombiecrawler" prob="0.03"/>
+	<entity name="fatzombiecop" prob="0.2"/>
+	<entity name="burntzombie" prob="0.03"/>
+        <entity name="reddit01" prob="0.25" />
+        <entity name="reddit02" prob="0.25" />
+        <entity name="reddit03" prob="0.25" />
+        <entity name="reddit04" prob="0.25" />
+        <entity name="redditgal01" prob="0.25" />
+        <entity name="redditgal02" prob="0.25" />
+        <entity name="redditgal03" prob="0.25" />
+        <entity name="redditgal04" prob="0.25" />
     </entitygroup>	            		    		        		    		
 	
     <entitygroup name="ZombiesHoard">
@@ -90,25 +130,33 @@
         <entity name="zombie05" prob="0.1"/>
         <entity name="zombie06" prob="0.1"/>
         <entity name="zombie07" prob="0.1"/>
-		<entity name="zombiegal01" prob="0.1"/> 
-		<entity name="zombiegal02" prob="0.1"/>
-		<entity name="zombiegal03" prob="0.1"/>
-		<entity name="zombiegal04" prob="0.1"/>
-		<entity name="fatzombie" prob="0.1"/>
-		<entity name="fatzombiecop" prob="0.05"/>
-		<entity name="hornet" prob="0.05"/>
-		<entity name="zombiedog" prob="0.05"/>
-		<entity name="zombiecrawler" prob="0.1"/>
+	<entity name="zombiegal01" prob="0.1"/> 
+	<entity name="zombiegal02" prob="0.1"/>
+	<entity name="zombiegal03" prob="0.1"/>
+	<entity name="zombiegal04" prob="0.1"/>
+	<entity name="fatzombie" prob="0.1"/>
+	<entity name="fatzombiecop" prob="0.05"/>
+	<entity name="hornet" prob="0.05"/>
+	<entity name="zombiedog" prob="0.05"/>
+	<entity name="zombiecrawler" prob="0.1"/>
+        <entity name="reddit01" prob="0.25" />
+        <entity name="reddit02" prob="0.25" />
+        <entity name="reddit03" prob="0.25" />
+        <entity name="reddit04" prob="0.25" />
+        <entity name="redditgal01" prob="0.25" />
+        <entity name="redditgal02" prob="0.25" />
+        <entity name="redditgal03" prob="0.25" />
+        <entity name="redditgal04" prob="0.25" />
     </entitygroup>
 
-	<entitygroup name="ZombieScouts">
-		<entity name="spiderzombie" />
-	</entitygroup>
+    <entitygroup name="ZombieScouts">
+	<entity name="spiderzombie" />
+    </entitygroup>
 
-  <entitygroup name="ZombiesCrawlersDogs">
-    <entity name="zombiedog" prob="0.04"/>
-    <entity name="zombiecrawler" prob="0.1"/>
-  </entitygroup>
+    <entitygroup name="ZombiesCrawlersDogs">
+	<entity name="zombiedog" prob="0.04"/>
+	<entity name="zombiecrawler" prob="0.1"/>
+    </entitygroup>
 
   <entitygroup name="ZombiesBurntForest">
     <entity name="burntzombie" prob="0.1"/>
