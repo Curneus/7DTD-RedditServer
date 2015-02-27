@@ -3204,17 +3204,17 @@
     <ingredient name="paper" count="1" grid="1, 2" />
     <ingredient name="paper" count="1" grid="2, 2" />
   </recipe>
-  <recipe count="1" craft_time="5" name="wroughtIronFence" scrapable="False">
-    <ingredient count="1" grid="-2, -2" name="shortMetalPipe" />
-    <ingredient count="1" grid="-2, -1" name="shortMetalPipe" />
-    <ingredient count="1" grid="0, -1" name="shortMetalPipe" />
-    <ingredient count="1" grid="2, -1" name="shortMetalPipe" />
-    <ingredient count="1" grid="2, -2" name="shortMetalPipe" />
-    <ingredient count="1" grid="2, 0" name="shortMetalPipe" />
-    <ingredient count="1" grid="1, 0" name="shortMetalPipe" />
-    <ingredient count="1" grid="0, 0" name="shortMetalPipe" />
-    <ingredient count="1" grid="-1, 0" name="shortMetalPipe" />
-    <ingredient count="1" grid="-2, 0" name="shortMetalPipe" />
+  <recipe name="wroughtIronFence" count="1" craft_time="5" scrapable="False">
+    <ingredient name="shortMetalPipe" count="1" grid="-2, -2" />
+    <ingredient name="shortMetalPipe" count="1" grid="-2, -1" />
+    <ingredient name="shortMetalPipe" count="1" grid="0, -1" />
+    <ingredient name="shortMetalPipe" count="1" grid="2, -1" />
+    <ingredient name="shortMetalPipe" count="1" grid="2, -2" />
+    <ingredient name="shortMetalPipe" count="1" grid="2, 0" />
+    <ingredient name="shortMetalPipe" count="1" grid="1, 0" />
+    <ingredient name="shortMetalPipe" count="1" grid="0, 0" />
+    <ingredient name="shortMetalPipe" count="1" grid="-1, 0" />
+    <ingredient name="shortMetalPipe" count="1" grid="-2, 0" />
   </recipe>
   <recipe name="plywoodOsb" count="1" scrapable="False" craft_time="5">
     <ingredient name="woodPlank" count="1" grid="-2, -1" />
@@ -3308,7 +3308,6 @@
     <ingredient name="glass" count="1" grid="-1, -1" />
     <ingredient name="glass" count="1" grid="-1, 0" />
     <ingredient name="glass" count="1" grid="1, -1" />
-    <ingredient name="glass" count="1" grid="0, 0" />
     <ingredient name="glass" count="1" grid="-1, 1" />
     <ingredient name="glass" count="1" grid="0, 1" />
     <ingredient name="glass" count="1" grid="1, 0" />
@@ -3796,7 +3795,7 @@
     <ingredient name="drywall" count="1" grid="-1, -1" />
     <ingredient name="drywall" count="1" grid="-1, 0" />
   </recipe>
-  <recipe name="wedgeTanDrywallBaseboard" count="3" scrapable="True" craft_time="5">
+  <recipe name="wedgeTanDrywallBaseboard" count="3" scrapable="False" craft_time="5">
     <ingredient name="drywall" count="1" grid="0, 0" />
     <ingredient name="drywall" count="1" grid="-1, -1" />
     <ingredient name="drywall" count="1" grid="-1, 0" />
@@ -3887,7 +3886,7 @@
     <ingredient name="concreteTrim2" count="1" grid="-1, -1" />
     <ingredient name="concreteTrim2" count="1" grid="-1, 0" />
   </recipe>
-  <recipe name="brickDecayedSlope" count="3" scrapable="True" craft_time="5">
+  <recipe name="brickDecayedSlope" count="3" scrapable="False" craft_time="5">
     <ingredient name="brickDecayed" count="1" grid="0, 0" />
     <ingredient name="brickDecayed" count="1" grid="-1, -1" />
     <ingredient name="brickDecayed" count="1" grid="-1, 0" />
@@ -3927,7 +3926,7 @@
     <ingredient name="tileFloor3" count="1" grid="-1, 0" />
     <ingredient name="tileFloor3" count="1" grid="0, -1" />
   </recipe>
-  <recipe name="commercialDoor1_v1" count="1" scrapable="True" craft_time="5">
+  <recipe name="commercialDoor1_v1" count="1" scrapable="False" craft_time="5">
     <ingredient name="forgedIron" count="1" grid="0, 0" />
     <ingredient name="forgedIron" count="1" grid="-1, 0" />
     <ingredient name="forgedIron" count="1" grid="-1, -1" />
@@ -3941,7 +3940,7 @@
     <ingredient name="forgedIron" count="1" grid="0, 1" />
     <ingredient name="forgedIron" count="1" grid="0, -1" />
   </recipe>
-  <recipe name="houseFrontDoor1_v1" count="1" scrapable="True" craft_time="5">
+  <recipe name="houseFrontDoor1_v1" count="1" scrapable="False" craft_time="5">
     <ingredient name="woodPlank" count="1" grid="0, 0" />
     <ingredient name="woodPlank" count="1" grid="-2, 1" />
     <ingredient name="woodPlank" count="1" grid="-2, 0" />
@@ -3955,7 +3954,7 @@
     <ingredient name="woodPlank" count="1" grid="-1, -1" />
     <ingredient name="woodPlank" count="1" grid="-1, 0" />
   </recipe>
-  <recipe name="houseFrontDoor2_v1" count="1" scrapable="True" craft_time="5">
+  <recipe name="houseFrontDoor2_v1" count="1" scrapable="False" craft_time="5">
     <ingredient name="woodPlank" count="1" grid="0, 0" />
     <ingredient name="woodPlank" count="1" grid="2, -2" />
     <ingredient name="woodPlank" count="1" grid="0, -2" />
@@ -3969,26 +3968,18 @@
     <ingredient name="woodPlank" count="1" grid="1, 1" />
     <ingredient name="woodPlank" count="1" grid="0, 1" />
   </recipe>
-  <recipe name="fenceWood" count="6" scrapable="True" craft_time="5">
-    <ingredient name="woodPlank" count="1" grid="1, 2" />
-    <ingredient name="woodPlank" count="1" grid="2, 2" />
-    <ingredient name="woodPlank" count="1" grid="0, 2" />
-    <ingredient name="woodPlank" count="1" grid="-1, 2" />
-    <ingredient name="woodPlank" count="1" grid="-1, 1" />
-    <ingredient name="woodPlank" count="1" grid="-1, 0" />
-    <ingredient name="woodPlank" count="1" grid="2, 1" />
-    <ingredient name="woodPlank" count="1" grid="2, 0" />
-    <ingredient name="woodPlank" count="1" grid="1, 0" />
-    <ingredient name="woodPlank" count="1" grid="0, 0" />
-    <ingredient name="woodPlank" count="1" grid="1, 1" />
-    <ingredient name="woodPlank" count="1" grid="0, 1" />
-    <ingredient name="woodPlank" count="1" grid="-1, -1" />
-    <ingredient name="woodPlank" count="1" grid="0, -1" />
-    <ingredient name="woodPlank" count="1" grid="1, -1" />
-    <ingredient name="woodPlank" count="1" grid="2, -1" />
-    <ingredient name="plantChrysanthemum" count="1" grid="2, -2" />
+  <recipe name="fenceWood" count="1" scrapable="False" craft_time="5">
+    <ingredient name="planks4" count="1" grid="-1, 0" />
+    <ingredient name="planks4" count="1" grid="1, 0" />
+    <ingredient name="planks4" count="1" grid="0, 0" />
+    <ingredient name="planks4" count="1" grid="-1, -1" />
+    <ingredient name="planks4" count="1" grid="0, -1" />
+    <ingredient name="planks4" count="1" grid="1, -1" />
+    <ingredient name="planks4" count="1" grid="-1, 1" />
+    <ingredient name="planks4" count="1" grid="0, 1" />
+    <ingredient name="planks4" count="1" grid="1, 1" />
   </recipe>
-  <recipe name="endTable" count="1" scrapable="True" craft_time="5">
+  <recipe name="endTable" count="1" scrapable="False" craft_time="5">
     <ingredient name="woodPlank" count="1" grid="0, 0" />
     <ingredient name="woodPlank" count="1" grid="-2, 2" />
     <ingredient name="woodPlank" count="1" grid="-2, 1" />
@@ -4001,7 +3992,7 @@
     <ingredient name="woodPlank" count="1" grid="-1, 1" />
     <ingredient name="coal" count="1" grid="-1, 0" />
   </recipe>
-  <recipe name="lootCrateShotgunMessiah" count="1" scrapable="True" craft_time="5">
+  <recipe name="lootCrateShotgunMessiah" count="1" scrapable="False" craft_time="5">
     <ingredient name="woodPlank" count="1" grid="-1, -2" />
     <ingredient name="woodPlank" count="1" grid="-2, -2" />
     <ingredient name="plywoodOsb" count="1" grid="0, -1" />
@@ -4027,12 +4018,12 @@
     <ingredient name="plywoodOsb" count="1" grid="-1, 0" />
     <ingredient name="plywoodOsb" count="1" grid="1, 0" />
   </recipe>
-  <recipe name="halfBlockOldWood" count="3" scrapable="True" craft_time="5">
+  <recipe name="halfBlockOldWood" count="3" scrapable="False" craft_time="5">
     <ingredient name="woodPlank" count="1" grid="0, 0" />
     <ingredient name="woodPlank" count="1" grid="-1, 0" />
     <ingredient name="woodPlank" count="1" grid="1, 0" />
   </recipe>
-  <recipe name="rockResource" count="1" scrapable="True" craft_time="5">
+  <recipe name="rockResource" count="1" scrapable="False" craft_time="5">
     <ingredient name="rockSmall" count="1" grid="0, -2" />
     <ingredient name="rockSmall" count="1" grid="-1, -2" />
     <ingredient name="rockSmall" count="1" grid="1, -2" />
@@ -4071,7 +4062,7 @@
     <ingredient name="cornMeal" count="1" grid="1, -1" />
     <ingredient name="shortMetalPipe" count="1" grid="2, -2" />
   </recipe>
-    <recipe name="rockResource" count="1" scrapable="True" craft_time="5">
+  <recipe name="rockResource" count="1" scrapable="False" craft_time="5">
     <ingredient name="rockSmall" count="1" grid="0, -2" />
     <ingredient name="rockSmall" count="1" grid="-1, -2" />
     <ingredient name="rockSmall" count="1" grid="1, -2" />
@@ -4093,5 +4084,124 @@
     <ingredient name="ironFragment" count="1" grid="0, 1" />
     <ingredient name="ironFragment" count="1" grid="1, 0" />
     <ingredient name="ironFragment" count="1" grid="-1, 0" />
+  </recipe>
+  <recipe name="corrugatedDoorCentered" count="1" scrapable="False" craft_time="5">
+    <ingredient name="forgedIron" count="1" grid="0, -2" />
+    <ingredient name="forgedIron" count="1" grid="1, -2" />
+    <ingredient name="forgedIron" count="1" grid="0, -1" />
+    <ingredient name="forgedIron" count="1" grid="-1, -1" />
+    <ingredient name="forgedIron" count="1" grid="0, 0" />
+    <ingredient name="forgedIron" count="1" grid="1, 0" />
+    <ingredient name="forgedIron" count="1" grid="0, 1" />
+    <ingredient name="forgedIron" count="1" grid="-1, 1" />
+    <ingredient name="forgedIron" count="1" grid="2, -2" />
+    <ingredient name="forgedIron" count="1" grid="1, -1" />
+    <ingredient name="forgedIron" count="1" grid="2, 0" />
+    <ingredient name="forgedIron" count="1" grid="1, 1" />
+  </recipe>
+  <recipe name="corrugatedMetalThin" count="1" scrapable="False" craft_time="5">
+    <ingredient name="forgedIron" count="1" grid="0, 0" />
+    <ingredient name="forgedIron" count="1" grid="0, -2" />
+    <ingredient name="forgedIron" count="1" grid="-1, -1" />
+    <ingredient name="forgedIron" count="1" grid="-1, 1" />
+  </recipe>
+  <recipe name="metalBillboardTrussing" count="1" scrapable="False" craft_time="5">
+    <ingredient name="shortMetalPipe" count="1" grid="0, -2" />
+    <ingredient name="shortMetalPipe" count="1" grid="-2, 0" />
+    <ingredient name="shortMetalPipe" count="1" grid="-1, -1" />
+    <ingredient name="shortMetalPipe" count="1" grid="-1, 0" />
+    <ingredient name="shortMetalPipe" count="1" grid="0, 0" />
+    <ingredient name="shortMetalPipe" count="1" grid="1, -1" />
+    <ingredient name="shortMetalPipe" count="1" grid="2, 0" />
+    <ingredient name="shortMetalPipe" count="1" grid="1, 0" />
+  </recipe>
+  <recipe name="greenMetalRoof" count="4" scrapable="False" craft_time="20">
+    <ingredient name="brownGrassDiagonal" count="1" grid="1, 0" />
+    <ingredient name="forgedIron" count="1" grid="0, 0" />
+    <ingredient name="brownGrassDiagonal" count="1" grid="0, 1" />
+    <ingredient name="forgedIron" count="1" grid="-1, 1" />
+    <ingredient name="forgedIron" count="1" grid="-1, -1" />
+    <ingredient name="brownGrassDiagonal" count="1" grid="-1, 0" />
+    <ingredient name="forgedIron" count="1" grid="1, -1" />
+    <ingredient name="forgedIron" count="1" grid="1, 1" />
+    <ingredient name="brownGrassDiagonal" count="1" grid="0, -1" />
+  </recipe>
+  <recipe name="wedgeGreenMetalRoof" count="3" scrapable="False" craft_time="5">
+    <ingredient name="greenMetalRoof" count="1" grid="0, 0" />
+    <ingredient name="greenMetalRoof" count="1" grid="-1, -1" />
+    <ingredient name="greenMetalRoof" count="1" grid="-1, 0" />
+  </recipe>
+  <recipe name="angledOldWoodSupport" count="1" scrapable="False" craft_time="5">
+    <ingredient name="woodPlank" count="1" grid="-1, -1" />
+    <ingredient name="woodPlank" count="1" grid="1, 0" />
+    <ingredient name="woodPlank" count="1" grid="0, 0" />
+    <ingredient name="woodPlank" count="1" grid="2, 1" />
+    <ingredient name="woodPlank" count="1" grid="1, 1" />
+    <ingredient name="woodPlank" count="1" grid="0, -1" />
+    <ingredient name="fertileDirt" count="1" grid="-2, -2" />
+    <ingredient name="fertileDirt" count="1" grid="-1, -2" />
+  </recipe>
+  <recipe name="woodPainted1" count="1" scrapable="False" craft_time="5">
+    <ingredient name="potassiumNitratePowder" count="1" grid="-1, 0" />
+    <ingredient name="woodPlank" count="1" grid="0, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, -1" />
+    <ingredient name="woodPlank" count="1" grid="1, -1" />
+    <ingredient name="potassiumNitratePowder" count="1" grid="1, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 1" />
+    <ingredient name="fertileDirt" count="1" grid="0, 1" />
+    <ingredient name="woodPlank" count="1" grid="1, 1" />
+    <ingredient name="fertileDirt" count="1" grid="0, -1" />
+  </recipe>
+  <recipe name="woodPainted2" count="1" scrapable="False" craft_time="5">
+    <ingredient name="fertileDirt" count="1" grid="1, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, -1" />
+    <ingredient name="potassiumNitratePowder" count="1" grid="0, -1" />
+    <ingredient name="fertileDirt" count="1" grid="-1, 0" />
+    <ingredient name="potassiumNitratePowder" count="1" grid="0, 1" />
+    <ingredient name="woodPlank" count="1" grid="1, -1" />
+    <ingredient name="woodPlank" count="1" grid="-1, 1" />
+    <ingredient name="woodPlank" count="1" grid="0, 0" />
+    <ingredient name="woodPlank" count="1" grid="1, 1" />
+  </recipe>
+  <recipe name="shutters1" count="1" scrapable="False" craft_time="5">
+    <ingredient name="woodPlank" count="1" grid="-1, -1" />
+    <ingredient name="woodPlank" count="1" grid="-1, 0" />
+    <ingredient name="woodPlank" count="1" grid="-1, 1" />
+    <ingredient name="coal" count="1" grid="-1, -2" />
+  </recipe>
+  <recipe name="glassBusinessCentered" count="1" scrapable="False" craft_time="5">
+    <ingredient name="glass" count="1" grid="0, 0" />
+    <ingredient name="glass" count="1" grid="0, -1" />
+    <ingredient name="glass" count="1" grid="0, 1" />
+    <ingredient name="glass" count="1" grid="-1, -1" />
+    <ingredient name="glass" count="1" grid="-1, 0" />
+    <ingredient name="glass" count="1" grid="-1, 1" />
+    <ingredient name="glass" count="1" grid="1, 0" />
+    <ingredient name="glass" count="1" grid="1, -1" />
+    <ingredient name="glass" count="1" grid="1, 1" />
+  </recipe>
+  <recipe name="garageDoor1" count="1" scrapable="False" craft_time="5">
+    <ingredient name="woodPlank" count="1" grid="0, 1" />
+    <ingredient name="woodPlank" count="1" grid="0, -1" />
+    <ingredient name="woodPlank" count="1" grid="0, -2" />
+    <ingredient name="woodPlank" count="1" grid="1, -1" />
+    <ingredient name="woodPlank" count="1" grid="1, 0" />
+    <ingredient name="woodPlank" count="1" grid="0, 0" />
+  </recipe>
+  <recipe name="candleTable" count="1" scrapable="False" craft_time="5">
+    <ingredient name="candle" count="1" grid="0, -1" />
+    <ingredient name="candyTin" count="1" grid="0, 0" />
+  </recipe>
+  <recipe name="Carpet1WoodPainted2" count="4" scrapable="False" craft_time="5">
+    <ingredient name="woodPainted2" count="1" grid="0, 0" />
+    <ingredient name="Carpet1" count="1" grid="-1, 0" />
+    <ingredient name="woodPainted2" count="1" grid="0, -1" />
+    <ingredient name="Carpet1" count="1" grid="-1, -1" />
+  </recipe>
+  <recipe name="Carpet2WoodPainted2" count="4" scrapable="False" craft_time="5">
+    <ingredient name="woodPainted2" count="1" grid="0, 0" />
+    <ingredient name="Carpet2" count="1" grid="-1, -1" />
+    <ingredient name="Carpet2" count="1" grid="-1, 0" />
+    <ingredient name="woodPainted2" count="1" grid="0, -1" />
   </recipe>
 </recipes>
