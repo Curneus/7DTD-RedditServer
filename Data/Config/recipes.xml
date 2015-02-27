@@ -4204,4 +4204,12 @@
     <ingredient name="Carpet2" count="1" grid="-1, 0" />
     <ingredient name="woodPainted2" count="1" grid="0, -1" />
   </recipe>
+  <recipe name="cobblestoneWedge" count="1" scrapable="False" craft_time="10">
+    <ingredient count="1" grid="-1, 1" name="cobblestones" />
+    <ingredient name="cement" count="1" grid="-1, 0" />
+    <ingredient name="cement" count="1" grid="0, 1" />
+    <ingredient count="1" grid="-1, -1" name="cobblestones" />
+    <ingredient count="1" grid="0, 0" name="cobblestones" />
+    <ingredient count="1" grid="1, 1" name="cobblestones" />
+  </recipe>
 </recipes>
