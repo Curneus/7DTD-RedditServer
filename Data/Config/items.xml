@@ -2067,7 +2067,7 @@ d		<property name="Weight" value="64" />
 
     <item id="244" name="masonJar" stacknumber="15" material="metal" mesh_file="Items/Food/mason_jar" hold_type="3">
         <preview zoom="28" pos="0,-0.05" rot="90,45,0" />
-	<property name="Group" value="Resources" />
+        <property name="Group" value="Resources" />
     </item>	
 	
 	<item id="245" name="firstAidBandage" stacknumber="5" material="cloth" mesh_file="Items/Health/gauze" hold_type="16">
@@ -5048,18 +5048,18 @@ d		<property name="Weight" value="64" />
 		</property>
 	</item> 
 
-    	<!-- modded to add emptyGasCan item -->
-    	<item id="3000" name="emptyGasCan" stacknumber="100" material="metal" mesh_file="Items/Tools/gas_can" hold_type="7">
-        	<property name="CustomIcon" value="gasCan"/>
+    <!-- custom emptyGasCan item -->
+    <item id="3000" name="emptyGasCan" stacknumber="100" material="metal" mesh_file="Items/Tools/gas_can" hold_type="7">
+       	<property name="CustomIcon" value="gasCan"/>
 		<property name="CustomIconTint" value="ADD8E6"/>
 		<property name="Group" value="Resources" />
-        	<use_action
-        		class="ExchangeItem"
+       	<use_action
+       		class="ExchangeItem"
 			delay="60.0"
 			change_item_to      = "gasCan"
-			focused_blockname_1 = "workingGasPump"			
-            		sound_start="UseActions/bucketfill_water"
+			focused_blockname_1 = "gasPump"			
+       		sound_start="UseActions/bucketfill_water"
 		/>
-    	</item>
+    </item>
     
 </items>
