@@ -1121,21 +1121,12 @@
     <property name="Group" value="Furniture/Decor" />
   </block>
   <block id="350" name="gasPump">
-    <!-- modded to comment out class TNT since conflicts with UpgradeBlock -->
     <property name="Class" value="TNT" />
     <property name="Material" value="metal_thin" />
     <property name="Shape" value="Ext3dModel" />
     <property name="Mesh" value="models" />
     <property name="Model" value="Industrial/gas_pump" param1="main_mesh" />
-    <!-- modded to add UpgradeBlock ** removed for now, seemed to cause server issue **
-    <property class="UpgradeBlock">
-      <property name="ToBlock" value="workingGasPump" />
-      <property name="Item" value="forgedIron" />
-      <property name="ItemCount" value="128" />
-      <property name="UpgradeHitCount" value="50" />
-    </property> -->
-    <!-- modded to comment out Explosion since conflicts with UpgradeBlock -->
-    <property class="Explosion"> -->
+    <property class="Explosion">
       <property name="ParticleIndex" value="4" />
       <!-- which prefab/particle is used -->
       <property name="RadiusBlocks" value="5" />
@@ -1147,9 +1138,7 @@
       <property name="EntityDamage" value="100" />
       <!-- damage for entities in the center of the explosion -->
     </property>
-    <!-- modded to drop scrapIron since no boom unless upgraded -->
-    <drop event="Destroy" name="scrapIron" count="2,6" prob="1" />
-    <!-- modded to comment out LPHardnessScale -->
+    <drop event="Destroy" count="0" />
     <property name="LPHardnessScale" value="0" />
     <!-- disable LP for TNT blocks -->
   </block>
@@ -9644,22 +9633,4 @@
     <drop event="Destroy" count="0" />
   </block>
 
-  <!-- custom workingGasPump block -->
-  <block id="3002" name="workingGasPump">
-    <property name="Class" value="TNT" />
-    <property name="Material" value="metal_thin" />
-    <property name="Shape" value="Ext3dModel" />
-    <property name="Mesh" value="models" />
-    <property name="Model" value="Industrial/gas_pump" param1="main_mesh" />
-    <property class="Explosion">
-      <property name="ParticleIndex" value="4" />
-      <property name="RadiusBlocks" value="20" />
-      <property name="BlockDamage" value="1200" />
-      <property name="RadiusEntities" value="20" />
-      <property name="EntityDamage" value="1000" />
-    </property>
-    <drop event="Destroy" count="0" />
-    <property name="LPHardnessScale" value="0" />
-  </block>
-  
 </blocks>
