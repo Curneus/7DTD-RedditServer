@@ -367,13 +367,13 @@
     <ingredient name="stick" count="1" grid="-1, 1" />
   </recipe>
   <recipe name="clubSpiked" count="1" scrapable="False" craft_time="5">
-    <ingredient name="nail" count="1" grid="1, -2" />
+    <ingredient name="ingotIron" count="1" grid="1, -2" />
     <ingredient name="stick" count="1" grid="2, -2" />
-    <ingredient name="nail" count="1" grid="0, -1" />
+    <ingredient name="ingotIron" count="1" grid="0, -1" />
     <ingredient name="stick" count="1" grid="1, -1" />
-    <ingredient name="nail" count="1" grid="2, -1" />
+    <ingredient name="ingotIron" count="1" grid="2, -1" />
     <ingredient name="stick" count="1" grid="0, 0" />
-    <ingredient name="nail" count="1" grid="1, 0" />
+    <ingredient name="ingotIron" count="1" grid="1, 0" />
     <ingredient name="stick" count="1" grid="-1, 1" />
   </recipe>
   <recipe name="clubWood" count="1" scrapable="False" craft_time="3">
@@ -3395,12 +3395,12 @@
     <ingredient name="woodPlank" count="1" grid="-1, 2" />
     <ingredient name="woodPlank" count="1" grid="-2, 1" />
     <ingredient name="woodPlank" count="1" grid="-2, 2" />
-    <ingredient name="book" count="1" grid="-1, -1" />
-    <ingredient name="book" count="1" grid="0, -1" />
-    <ingredient name="book" count="1" grid="1, -1" />
-    <ingredient name="book" count="1" grid="-1, 1" />
-    <ingredient name="book" count="1" grid="0, 1" />
-    <ingredient name="book" count="1" grid="1, 1" />
+    <ingredient name="ammunitionNationBook" count="1" grid="-1, -1" />
+    <ingredient name="homeMaintenanceBook" count="1" grid="0, -1" />
+    <ingredient name="huntingKnifeBook" count="1" grid="1, -1" />
+    <ingredient name="pistolBook" count="1" grid="-1, 1" />
+    <ingredient name="reloadingWeeklyBook" count="1" grid="0, 1" />
+    <ingredient name="urbanCombatBook" count="1" grid="1, 1" />
   </recipe>
   <recipe name="asphalt" count="20" scrapable="False" craft_time="30">
     <ingredient count="1" grid="0, 0" name="clay" />
@@ -3463,7 +3463,7 @@
   </recipe>
   <recipe name="endTableLamp" count="1" scrapable="False" craft_time="15">
     <ingredient name="coal" count="1" grid="-1, 0" />
-    <ingredient name="Torch" count="1" grid="-1, -2" />
+    <ingredient name="torch" count="1" grid="-1, -2" />
     <ingredient name="woodPlank" count="1" grid="-2, -1" />
     <ingredient name="woodPlank" count="1" grid="-1, -1" />
     <ingredient name="woodPlank" count="1" grid="0, -1" />
@@ -3925,6 +3925,23 @@
     <ingredient name="tileFloor3" count="1" grid="0, 0" />
     <ingredient name="tileFloor3" count="1" grid="-1, 0" />
     <ingredient name="tileFloor3" count="1" grid="0, -1" />
+  </recipe>
+  <recipe name="grainAlcohol" count="1" scrapable="False" craft_area="campfire" craft_tool="beaker" craft_time="120">
+    <ingredient name="cornMeal" count="1" />
+    <ingredient name="beer" count="2" />
+  </recipe>
+  <recipe name="miningHelmet" count="1" scrapable="True" craft_time="5">
+    <ingredient name="forgedIron" count="1" grid="-2, 0" />
+    <ingredient name="forgedIron" count="1" grid="-1, -1" />
+    <ingredient name="forgedIron" count="1" grid="1, -1" />
+    <ingredient name="forgedIron" count="1" grid="0, -1" />
+    <ingredient name="forgedIron" count="1" grid="2, 0" />
+    <ingredient name="flashlight01" count="1" grid="0, -2" />
+    <ingredient name="leather" count="1" grid="-1, 0" />
+    <ingredient name="leather" count="1" grid="1, 0" />
+    <ingredient name="leather" count="1" grid="0, 0" />
+    <ingredient name="forgedIron" count="1" grid="-2, 1" />
+    <ingredient name="forgedIron" count="1" grid="2, 1" />
   </recipe>
   <recipe name="commercialDoor1_v1" count="1" scrapable="False" craft_time="5">
     <ingredient name="forgedIron" count="1" grid="0, 0" />
